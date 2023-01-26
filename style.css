@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Jeopardy';
+    src: url("./font/gyparody.ttf") format('truetype')
+    }
+
+@font-face {
+    font-family: 'Jeopardy2';
+    src: url("./font/gyparody2.ttf") format('truetype')
+    }
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(1, 3, 41, 0.87);
+    color: white;
+    font-family: "Jeopardy2", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+.title {
+    font-family: "Jeopardy", sans-serif;
+    font-size: 48px;
+    }
+
+#game {
+    display: flex;
+    }
+
+.genre-column {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    }
+
+.card {
+    display: grid;
+    place-items: center;
+    width: 18vw;
+    height: 18vh;
+    background-color: #020978;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 5px;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 60px;
+    border: solid 3px transparent;
+    color: #C9964E;
+    }
+
+ .card-clickable {
+     border: solid 3px #eae3d5;
+     cursor: pointer;
+     }
+
+ .button {
+     width: 50px;
+     margin: 2px;
+     cursor: pointer;
+     padding: 5px;
+     }
+
+.correct-answer {
+    background-color: rgba(148, 222, 100, 0.61);
+    }
+
+.wrong-answer {
+    background-color: rgba(222, 89, 99, 0.71);
+    }
